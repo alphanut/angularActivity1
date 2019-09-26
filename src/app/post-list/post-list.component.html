@@ -1,0 +1,9 @@
+<h2>AlloCiné : Bandes-annonces</h2>
+<ul class="list-group">
+    <app-post-list-item *ngFor="let post of postsList"
+        [title] = "post.title"
+        [loveIts] = "post.loveIts"
+        [content] = "post.content"
+        [createdDate] = "post.created_at">
+    </app-post-list-item>
+</ul>
